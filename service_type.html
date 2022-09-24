@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Select Service Type</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Choices.js [Custom select]-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+
+    <style>
+      .disNone{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wide" id="all">
+
+
+      <!-- HEADING BREADCRUMB-->
+      <section class="bg-pentagon py-4">
+        <div class="container py-3">
+          <div class="row d-flex align-items-center gy-4">
+            <div class="col-md-7">
+              <h1 class="h2 mb-0 text-uppercase">Service Type</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS SECTION-->
+      <section class="py-5">
+        <div class="container py-4">
+          <div class="row g-5">
+            <div class="col-lg-5 border p-4 m-4">
+              <h2>Service Type: Farm Machineries</h2>
+              <!-- REGISTER FORM-->
+              <form action="customer-orders.html">
+                <div class="col-md-12 mb-3 col-lg-3" style="width: 50%;">
+                  <label class="form-label" for="serviceType"></label>
+                  <select class="form-select" id="service" name="serviceType" data-customclass="form-control py-1">
+                    <option selected disabled>Service Type</option>
+                    <option value="Tractors">Tractors</option>
+                    <option value="Cultivators">Cultivators</option>
+                    <option value="Harvestors">Harvestors</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="land"><b>Land Area:</b></label>
+                  <input class="form-control" id="land" type="text" name="land" placeholder="Land Area">
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="croptype"><b>Crop Type:</b></label>
+                  <input class="form-control" id="croptype" type="text" name="croptype" placeholder="Crop Type">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="location"><b>Location:</b></label>
+                  <input class="form-control" id="location" type="text" name="location" placeholder="Location">
+                </div>
+
+                <div class="form-group mb-3">
+                  <a class="btn btn-outline-primary" href="service_type.html" type="submit"><i class="fas fa-user me-2"></i>Book Now</a>
+                </div>
+              </form>
+            </div>
+
+
+            <div class="col-lg-5 border p-4 m-4">
+              <h2>Service Type: Transport</h2>
+              <!-- REGISTER FORM-->
+              <form action="customer-orders.html">
+
+                <div class="col-md-12 mb-3 col-lg-3" style="width: 50%;">
+                  <label class="form-label" for="serviceType"></label>
+                  <select class="form-select" onClick="option()" id="serviceType" name="serviceType" data-customclass="form-control py-1">
+                    <option selected disabled>Service Type</option>
+                    <option value="import">Import</option>
+                    <option value="export">Export</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="protype"><b>Product Type:</b></label>
+                  <input class="form-control" id="protype" type="text" name="protype" placeholder="Product Type">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="weight"><b>Weight</b></label>
+                  <input class="form-control" id="weight" type="number" name="weight" placeholder="Weight">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="location1"><b>Pick Up Location:</b></label>
+                  <input class="form-control" id="location1" type="text" name="location1" placeholder="Location">
+                </div>
+
+                <div class="form-group mb-3 disNone" id="loc">
+                  <label class="form-label" for="location2"><b>Drop Location:</b></label>
+                  <input class="form-control" id="location2" type="text" name="location2" placeholder="Location">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="date"><b>Date:</b></label>
+                  <input class="form-control" id="date" type="date" name="date" placeholder="Date">
+                </div>
+
+
+                <div class="form-group mb-3">
+                  <a class="btn btn-outline-primary" href="service_type.html" type="submit"><i class="fas fa-user me-2"></i>Book Now</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script>
+      function option(){
+        const serviceType = document.getElementById("serviceType")
+        const loc = document.getElementById("loc")
+
+        if(serviceType.value == "import"){
+          loc.classList.add("disNone");
+        }else if(serviceType.value == "export"){
+          loc.classList.remove("disNone");
+        }
+      }
+    </script>
+
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
